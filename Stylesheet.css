@@ -1,0 +1,1618 @@
+/*---- NavigationBar Created following the treehouse tutorial--*/
+*{box-sizing: border-box;}
+
+@font-face {
+	font-family: 'icomoon';
+	;
+}
+
+body {
+	background:#fff;
+	color: #000000;
+	font-family: sans-serif;
+	line-height: 1.5;
+}
+
+.a{
+ color: #000000;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; 
+}
+.main-header {
+padding-top: 50px;
+padding-left: 50px;
+  
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  min-height: 90px;
+  padding: 1px;
+padding-left: 20px;
+  border: 3px solid #DB4C4C; 
+  border-radius: 0 0 5px 5px;
+	background: #FF96CA;
+    position: fixed;
+}
+  .main-header:after {
+    position: fixed;
+    top: 0;
+    content: " ";
+    display: table;
+    clear: both;
+
+  }
+/* -------------------------------Nav bar -------------------- */
+
+.main-nav,
+.drop-nav {
+    text-align: center;
+ position:absolute;
+  background: #fff;
+}
+.main-nav {
+  float:left;
+  border-radius: 4px;
+  margin-top: 8px;
+  border: solid 1px #DB4C4C;
+}
+  .main-nav > li {
+    color: #000;
+    float: left;
+    border-left: solid 1px #DB4C4C;
+  }
+  .main-nav li:first-child {
+    border-left:solid 1px #DB4C4C;
+  }
+  .main-nav a { 
+    color: #000;
+    display: block;
+    padding: 15px 35px;
+    text-decoration: none;
+  }
+
+/* ------------------------------Dropdown -------------------- */
+
+.dropdow{
+    position: relative;
+}
+
+a:hover{
+    background-color: #f6e0f0;
+}
+
+.drop-nav{
+    position: absolute;
+    display: none;
+     border: solid 1px #DB4C4C;
+}
+
+.drop-nav li{
+    
+    border-bottom: 1px solid rgba(255,255,255,.2);
+     border: solid 1px #DB4C4C ;
+    border-top: solid 1px #DB4C4C;
+}
+
+
+.dropdown:hover > .drop-nav{
+    
+    display: block;
+}
+
+/*-----------------------------------back to top button-------*/
+
+#button {
+ display: inline-block;
+ background-color: palevioletred;
+ width: 50px;
+ height: 50px;
+ text-align: center;
+ border-radius: 4px;
+ position: fixed;
+ bottom: 30px;
+ right: 30px;
+ transition: background-color .3s;
+visibility: visible;
+ z-index: 1000;
+}
+#button::after {
+ content: "^";
+ text-decoration: underline;
+ font-family: FontAwesome;
+ font-weight: normal;
+ font-style: normal;
+ font-size: 2em;
+ line-height: 50px;
+ color:#fff;
+}
+#button:hover {
+ cursor: pointer;
+ background-color: #000;
+}
+#button:active {
+ background-color: #000;
+}
+#button.show {
+ opacity: 1;
+ visibility: visible;
+}
+
+
+
+
+/*-------------------------------HomePage----------------------*/
+
+.bgc{
+    background-color: #d0dcf2;
+}
+
+.porpose{
+    padding-top: 60px;
+    padding-bottom: 50px;
+    width: 100%;
+    height: auto;
+     margin: auto;
+    color: #fff;
+    font-size: 40px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    text-align: center;
+    background-image: url(images/social%20media.jpg);
+    width: 100%;
+    height: auto;
+    border-style: double;
+    border-color: #fff;
+    border-width: 20px;
+    
+}
+
+.padhomeone p{ 
+    padding:15px;
+    font-size: 65px;
+    margin: auto;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.padhometwo p{ 
+    padding:15px;
+    font-size: 25px;
+    margin: auto;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    text-align: center;
+}
+
+.tools p{ 
+    padding:15px;
+    font-size: 55px;
+    margin: auto;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    text-align: center;
+    font-weight: bold;
+}
+ .porpose p{ 
+    padding:15px;
+    font-size: 25px;
+    margin: auto;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    text-align: center;
+}
+
+h3{font-size: 40px;
+    margin: auto;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    text-align: center;
+    
+    
+}
+
+
+.ftools{  
+    font-size: 23px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+    background-color:#fff;
+    padding: 20px;
+    padding-top: 10px;
+    margin: auto;
+    border-style: double;
+    border-color: #0000CD;
+    border-width: 15px;
+}
+
+.ttools{  
+    font-size: 23px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+    background-color:#fff;
+    padding: 20px;
+    padding-top: 10px;
+    margin: auto;
+    border-style: double;
+    border-color: #00BFFF;
+    border-width: 15px;
+}
+
+.ytools{  
+    font-size: 23px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+    background-color:#fff;
+    padding: 20px;
+    padding-top: 10px;
+    margin: auto;
+    border-style: double;
+    border-color: #FF0000;
+    border-width: 15px;
+}
+
+.stools{  
+    font-size: 23px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+    background-color:#fff;
+    padding: 20px;
+    padding-top: 10px;
+    margin: auto;
+    border-style: double;
+    border-color: #8B008B;
+    border-width: 15px;
+}
+
+.wtools{  
+    font-size: 23px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+    background-color:#fff;
+    padding: 20px;
+    padding-top: 10px;
+    margin: auto;
+    border-style: double;
+    border-color: #32CD32;
+    border-width: 15px;
+}
+
+
+.fbhome{
+    float: right;
+    margin: 1em;
+    width: 18%;
+    height: auto;
+    
+}
+
+.twhome{
+    float: left;
+    margin: 1em;
+    width: 16%;
+    height: auto;
+    
+}
+
+.ythome{
+    float: right;
+    margin: 1em;
+    width: 18%;
+    height: auto;
+    
+}
+
+.slhome{
+    float: left;
+    margin: 1em;
+    width: 16%;
+    height: auto;
+    
+}
+
+.wahome{
+    float: right;
+    margin: 1em;
+    width: 18%;
+    height: auto;
+    
+}
+
+.padhomeone{
+ width: 90%;
+height: auto;
+ padding-top: 130px;   
+margin: auto;
+    }
+
+.padhometwo{
+ width: 75%;
+ padding-top: 100px;   
+margin: auto;
+    }
+
+/*all the social media tool logos are not mine and have been taken from the internet---------------------*/
+
+
+
+
+/*-----------------------------------------------twitter-------*/
+/*the background of the header image has been taken from google images----*/
+
+.twbody{
+    padding-top: 20px;
+    margin: auto;
+}
+
+div.twheader h1{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url(images/twlogo.png);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: bold;
+    color: #fff;
+    text-shadow:7px 7px #000;
+    font-size: 200px;
+    text-align: center;
+}
+
+
+
+.twcontent{
+    width: 50%;
+    height: auto;
+    border-style: ridge;
+    border-color: #00CCFF;
+    border-width: 3px;
+    background-color: aliceblue;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+     font-family: Georgia, "Times New Roman", Times, serif;
+     font-size: 20px; 
+    text-align: center;
+    margin: auto;
+}
+
+.twabout{
+     border-style: ridge;
+    border-color: #00CCFF;
+    border-width: 3px;
+    background-color: aliceblue;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+     font-family: Georgia, "Times New Roman", Times, serif;
+     font-size: 21px; 
+    text-align: center;
+    margin: auto;
+}
+
+.twabout ul{
+    list-style-type:disc;
+    text-align: left;
+    
+}
+
+.twstudent ul{
+     list-style-type:disc;
+    text-align: left;
+}
+
+.twhowto{font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: bold;
+    color: #00CCFF;
+    font-size: 50px;
+    margin: auto;
+    text-align: center;
+    text-decoration-line: underline;
+}
+
+.twone{
+    border-style: ridge;
+    border-color:#00CCFF;
+    border-width: 3px;
+    background-color: aliceblue;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+     font-family: Georgia, "Times New Roman", Times, serif;
+     font-size: 20px; 
+    text-align: center;
+    margin: auto;
+}
+
+.twtwo{
+     border-style: ridge;
+    border-color: #00CCFF;
+    border-width: 3px;
+    background-color: aliceblue;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+     font-family: Georgia, "Times New Roman", Times, serif;
+     font-size: 20px; 
+    text-align: center;
+    margin: auto;
+}
+
+.twthree{
+     border-style: ridge;
+    border-color: #00CCFF;
+    border-width: 3px;
+    background-color: aliceblue;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+     font-family: Georgia, "Times New Roman", Times, serif;
+     font-size: 20px; 
+    text-align: center;
+    margin: auto;
+}
+
+
+.twstepone{
+      width: 100%;
+     height: auto;
+     padding-left:300px;
+     padding-right: 300px;
+  
+}
+.twsteptwo{
+     width: 100%;
+     height: auto;
+     padding-left:300px;
+     padding-right: 300px;
+}
+
+ .twstepthree{
+     width: 100%;
+     height: auto;
+     padding-left:300px;
+     padding-right: 300px;
+}
+.twinstall{ 
+    border-style: ridge;
+    border-color: #00CCFF;
+    border-width: 3px;
+    background-color: aliceblue;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+     font-family: Georgia, "Times New Roman", Times, serif;
+     font-size: 20px; 
+    text-align: center;
+    margin: auto;
+}
+
+.install h{
+     font-family: Georgia, "Times New Roman", Times, serif;
+     font-size: 30px; 
+    text-decoration: underline;
+     text-align: center;
+    margin: auto;
+    
+}
+
+
+
+.twvideo{
+    border-color: #00CCFF;
+    border-style: double;
+    border-width: 20px;
+}
+
+.twstudent{
+    border-style: ridge;
+    border-color: #00CCFF;
+    border-width: 3px;
+    background-color: aliceblue;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+     font-family: Georgia, "Times New Roman", Times, serif;
+     font-size: 20px; 
+    text-align: center;
+    margin: auto;
+}
+
+
+
+
+/*----------------------------------------------facebook-------*/
+/*the background of the header image has been taken from google images----*/
+.fbbody{
+    padding-top: 20px;
+    margin: auto;
+}
+
+div.fbheader h1{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url(images/fblogo.png);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: bold;
+    color: #fff;
+    text-shadow:7px 7px #000;
+    font-size: 200px;
+    text-align: center;
+}
+
+
+
+.fcontent{
+    width: 50%;
+    height: auto;
+    border-style: ridge;
+    border-color: #483D8B;
+    border-width: 3px;
+    background-color: aliceblue;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+     font-family: Georgia, "Times New Roman", Times, serif;
+     font-size: 20px; 
+    text-align: center;
+    margin: auto;
+}
+
+.fabout{
+     border-style: ridge;
+    border-color: #483D8B;
+    border-width: 3px;
+    background-color: aliceblue;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+     font-family: Georgia, "Times New Roman", Times, serif;
+     font-size: 21px; 
+    text-align: center;
+    margin: auto;
+}
+
+.fabout ul{
+    list-style-type:disc;
+    text-align: left;
+    
+}
+.fbstudent ul{
+    list-style-type:disc;
+    text-align: left;
+    
+}
+
+.fteacher ul{
+    list-style-type:disc;
+    text-align: left;
+}
+.fhowto{
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: bold;
+    color: #483D8B;
+    font-size: 50px;
+    margin: auto;
+    text-align: center;
+    text-decoration-line: underline;
+}
+
+.fone{
+    border-style: ridge;
+    border-color: #483D8B;
+    border-width: 3px;
+    background-color: aliceblue;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+     font-family: Georgia, "Times New Roman", Times, serif;
+     font-size: 20px; 
+    text-align: center;
+    margin: auto;
+}
+
+.ftwo{
+     border-style: ridge;
+    border-color: #483D8B;
+    border-width: 3px;
+    background-color: aliceblue;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+     font-family: Georgia, "Times New Roman", Times, serif;
+     font-size: 20px; 
+    text-align: center;
+    margin: auto;
+}
+
+.fthree{
+     border-style: ridge;
+    border-color: #483D8B;
+    border-width: 3px;
+    background-color: aliceblue;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+     font-family: Georgia, "Times New Roman", Times, serif;
+     font-size: 20px; 
+    text-align: center;
+    margin: auto;
+}
+
+
+.fstepone{
+      width: 100%;
+     height: auto;
+     padding-left:300px;
+     padding-right: 300px;
+  
+}
+.fsteptwo{
+     width: 100%;
+     height: auto;
+     padding-left:300px;
+     padding-right: 300px;
+}
+
+ .fstepthree{
+     width: 100%;
+     height: auto;
+     padding-left:300px;
+     padding-right: 300px;
+}
+.finstall{ 
+    border-style: ridge;
+    border-color: #483D8B;
+    border-width: 3px;
+    background-color: aliceblue;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+     font-family: Georgia, "Times New Roman", Times, serif;
+     font-size: 20px; 
+    text-align: center;
+    margin: auto;
+}
+
+.finstall h{
+     font-family: Georgia, "Times New Roman", Times, serif;
+     font-size: 30px; 
+    text-decoration: underline;
+     text-align: center;
+    margin: auto;
+    
+}
+
+.fvideo{
+     width: 0%;
+     height: auto;
+     padding-left:300px;
+     padding-right: 300px;
+}
+
+video{
+    border-color: #483D8B;
+    border-style: double;
+    border-width: 20px;
+}
+
+.fbstudent{
+    border-style: ridge;
+    border-color: #483D8B;
+    border-width: 3px;
+    background-color: aliceblue;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+     font-family: Georgia, "Times New Roman", Times, serif;
+     font-size: 20px; 
+    text-align: center;
+    margin: auto;
+}
+
+
+
+
+
+/*-------------------------------------------youtube-------*/
+/*the background of the header image has been taken from google images----*/
+.ytbody{
+    padding-top: 20px;
+    margin: auto;
+}
+
+div.ytheader h1{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url(images/youtubelogo.png);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: bold;
+    color: #fff;
+    text-shadow:7px 7px #000;
+    font-size: 200px;
+    text-align: center;
+    margin: auto;
+}
+
+
+
+.ytcontent{
+    width: 50%;
+    height: auto;
+    border-style: ridge;
+    border-color: #e60000;
+    border-width: 3px;
+    background-color: #ffebe6;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+     font-family: Georgia, "Times New Roman", Times, serif;
+     font-size: 20px; 
+    text-align: center;
+    margin: auto;
+}
+
+.ytabout{
+     border-style: ridge;
+    border-color: #e60000;
+    border-width: 3px;
+    background-color: #ffebe6;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+     font-family: Georgia, "Times New Roman", Times, serif;
+     font-size: 21px; 
+    text-align: center;
+    margin: auto;
+}
+
+.ytabout ul{
+    list-style-type:disc;
+    text-align: left;
+    
+}
+
+.ytstudent ul{
+     list-style-type:disc;
+    text-align: left;
+}
+
+.ythowto{font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: bold;
+    color: #e60000;
+    font-size: 50px;
+    margin: auto;
+    text-align: center;
+    text-decoration-line: underline;
+}
+
+.ytone{
+    border-style: ridge;
+    border-color:#360000;
+    border-width: 3px;
+    background-color: #ffebe6;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+     font-family: Georgia, "Times New Roman", Times, serif;
+     font-size: 20px; 
+    text-align: center;
+    margin: auto;
+}
+
+.yttwo{
+     border-style: ridge;
+    border-color: #e60000;
+    border-width: 3px;
+    background-color: #ffebe6;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+     font-family: Georgia, "Times New Roman", Times, serif;
+     font-size: 20px; 
+    text-align: center;
+    margin: auto;
+}
+
+.ytthree{
+     border-style: ridge;
+    border-color: #e60000;
+    border-width: 3px;
+    background-color: #ffebe6;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+     font-family: Georgia, "Times New Roman", Times, serif;
+     font-size: 20px; 
+    text-align: center;
+    margin: auto;
+}
+
+
+.ytstepone{
+      width: 100%;
+     height: auto;
+     padding-left:300px;
+     padding-right: 300px;
+  
+}
+.ytsteptwo{
+     width: 100%;
+     height: auto;
+     padding-left:300px;
+     padding-right: 300px;
+}
+
+ .ytstepthree{
+     width: 100%;
+     height: auto;
+     padding-left:300px;
+     padding-right: 300px;
+}
+.ytinstall{ 
+    border-style: ridge;
+    border-color: #e60000;
+    border-width: 3px;
+    background-color: #ffebe6;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+     font-family: Georgia, "Times New Roman", Times, serif;
+     font-size: 20px; 
+    text-align: center;
+    margin: auto;
+}
+
+.install h{
+     font-family: Georgia, "Times New Roman", Times, serif;
+     font-size: 30px; 
+    text-decoration: underline;
+     text-align: center;
+    margin: auto;
+    
+}
+
+.ytvideo{
+    border-color: #e60000;
+    border-style: double;
+    border-width: 20px;
+}
+
+.ytstudent{
+    border-style: ridge;
+    border-color: #e60000;
+    border-width: 3px;
+    background-color: #ffebe6;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+     font-family: Georgia, "Times New Roman", Times, serif;
+     font-size: 20px; 
+    text-align: center;
+    margin: auto;
+}
+
+/*-------------------------------------------------whatsapp----*/
+/*the background of the header image has been taken from google images----*/
+
+.wabody{
+    padding-top: 20px;
+    margin: auto;
+}
+
+div.waheader h1{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url(images/whatsapplogo.jpg);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: bold;
+    color: #fff;
+    text-shadow:7px 7px #000;
+    font-size: 200px;
+    text-align: center;
+}
+
+
+
+.wacontent{
+    width: 50%;
+    height: auto;
+    border-style: ridge;
+    border-color: #009900;
+    border-width: 3px;
+    background-color: #ccffcc;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+     font-family: Georgia, "Times New Roman", Times, serif;
+     font-size: 20px; 
+    text-align: center;
+    margin: auto;
+}
+
+.waabout{
+     border-style: ridge;
+    border-color: #009900;
+    border-width: 3px;
+    background-color: #ccffcc;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+     font-family: Georgia, "Times New Roman", Times, serif;
+     font-size: 21px; 
+    text-align: center;
+    margin: auto;
+}
+
+.waabout ul{
+    list-style-type:disc;
+    text-align: left;
+    
+}
+
+.wastudent ul{
+     list-style-type:disc;
+    text-align: left;
+}
+
+.wahowto{font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: bold;
+    color: #009900;
+    font-size: 50px;
+    margin: auto;
+    text-align: center;
+    text-decoration-line: underline;
+}
+
+.waone{
+    border-style: ridge;
+    border-color:#009900;
+    border-width: 3px;
+    background-color: #ccffcc;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+     font-family: Georgia, "Times New Roman", Times, serif;
+     font-size: 20px; 
+    text-align: center;
+    margin: auto;
+}
+
+.watwo{
+     border-style: ridge;
+    border-color: #009900;
+    border-width: 3px;
+    background-color: #ccffcc;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+     font-family: Georgia, "Times New Roman", Times, serif;
+     font-size: 20px; 
+    text-align: center;
+    margin: auto;
+}
+
+.wathree{
+     border-style: ridge;
+    border-color: #009900;
+    border-width: 3px;
+    background-color: #ccffcc;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+     font-family: Georgia, "Times New Roman", Times, serif;
+     font-size: 20px; 
+    text-align: center;
+    margin: auto;
+}
+
+
+.wastepone{
+    padding-top: 25px;
+      width: 80%;
+     height: auto;
+     padding-left:300px;
+     padding-right: 300px;
+  
+}
+.wasteptwo{
+    padding-top: 25px;
+     width: 80%;
+     height: auto;
+     padding-left:300px;
+     padding-right: 300px;
+}
+
+ .wastepthree{
+     padding-top: 25px;
+     width: 80%;
+     height: auto;
+     padding-left:300px;
+     padding-right: 300px;
+}
+.wainstall{ 
+    border-style: ridge;
+    border-color: #009900;
+    border-width: 3px;
+    background-color: #ccffcc;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+     font-family: Georgia, "Times New Roman", Times, serif;
+     font-size: 20px; 
+    text-align: center;
+    margin: auto;
+}
+
+.install h{
+     font-family: Georgia, "Times New Roman", Times, serif;
+     font-size: 30px; 
+    text-decoration: underline;
+     text-align: center;
+    margin: auto;
+    
+}
+
+
+
+.wavideo{
+    border-color: #009900;
+    border-style: double;
+    border-width: 20px;
+}
+
+.wastudent{
+    border-style: ridge;
+    border-color: #009900;
+    border-width: 3px;
+    background-color: #ccffcc;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+     font-family: Georgia, "Times New Roman", Times, serif;
+     font-size: 20px; 
+    text-align: center;
+    margin: auto;
+}
+
+
+
+
+/*------------------------------------------------Slack------*/
+/*the background of the header image has been taken from google images----*/
+
+.sbody{
+    padding-top: 20px;
+    margin: auto;
+}
+
+div.sheader h1{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url(images/sllogo.png);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: bold;
+    color: #fff;
+    text-shadow:7px 7px #000;
+    font-size: 200px;
+    text-align: center;
+}
+
+
+
+.scontent{
+    width: 50%;
+    height: auto;
+    border-style: ridge;
+    border-color: #730099;
+    border-width: 3px;
+    background-color:#f2ccff;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+     font-family: Georgia, "Times New Roman", Times, serif;
+     font-size: 20px; 
+    text-align: center;
+    margin: auto;
+}
+
+.sabout{
+     border-style: ridge;
+    border-color: #730099;
+    border-width: 3px;
+    background-color: #f2ccff;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+     font-family: Georgia, "Times New Roman", Times, serif;
+     font-size: 21px; 
+    text-align: center;
+    margin: auto;
+}
+
+.sabout ul{
+    list-style-type:disc;
+    text-align: left;
+    
+}
+
+.sstudent ul{
+    list-style-type:disc;
+    text-align: left;
+    
+}
+.showto{font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: bold;
+    color: #730099;
+    font-size: 50px;
+    margin: auto;
+    text-align: center;
+    text-decoration-line: underline;
+}
+
+.sone{
+    border-style: ridge;
+    border-color:#730099;
+    border-width: 3px;
+    background-color: #f2ccff;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+     font-family: Georgia, "Times New Roman", Times, serif;
+     font-size: 20px; 
+    text-align: center;
+    margin: auto;
+}
+
+.stwo{
+     border-style: ridge;
+    border-color: #730099;
+    border-width: 3px;
+    background-color: #f2ccff;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+     font-family: Georgia, "Times New Roman", Times, serif;
+     font-size: 20px; 
+    text-align: center;
+    margin: auto;
+}
+
+.sthree{
+     border-style: ridge;
+    border-color: #730099;
+    border-width: 3px;
+    background-color: #f2ccff;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+     font-family: Georgia, "Times New Roman", Times, serif;
+     font-size: 20px; 
+    text-align: center;
+    margin: auto;
+}
+
+
+.sstepone{
+      width: 100%;
+     height: auto;
+     padding-left:300px;
+     padding-right: 300px;
+  
+}
+.ssteptwo{
+     width: 100%;
+     height: auto;
+     padding-left:300px;
+     padding-right: 300px;
+}
+
+ .sstepthree{
+     width: 100%;
+     height: auto;
+     padding-left:300px;
+     padding-right: 300px;
+}
+.sinstall{ 
+    border-style: ridge;
+    border-color:#730099;
+    border-width: 3px;
+    background-color: #f2ccff;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+     font-family: Georgia, "Times New Roman", Times, serif;
+     font-size: 20px; 
+    text-align: center;
+    margin: auto;
+}
+
+.sstall h{
+     font-family: Georgia, "Times New Roman", Times, serif;
+     font-size: 30px; 
+    text-decoration: underline;
+     text-align: center;
+    margin: auto;
+    
+}
+
+
+
+.svideo{
+    border-color:#730099;
+    border-style: double;
+    border-width: 20px;
+}
+
+.sstudent{
+    border-style: ridge;
+    border-color: #730099;
+    border-width: 3px;
+    background-color: #f2ccff;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+     font-family: Georgia, "Times New Roman", Times, serif;
+     font-size: 20px; 
+    text-align: center;
+    margin: auto;
+}
+
+
+
+
+/*------------------------------------------sitemap-----------*/
+/*The site map was made following a w3schools tree map tutorial-------------*/
+
+.bg{
+    margin: auto;
+    background-color: rgb(220, 208, 242);
+}
+
+.tree, .tree ul, .tree li{
+    position: relative;
+}
+
+.tree ul{
+    list-style: none;
+    padding-left: 32px;
+}
+
+.tree li::before, .tree li::after{
+    content: "";
+    position: absolute;
+    left: -12px;
+}
+
+.tree li:before{
+    border-top: 1px solid #000;
+    width: 8px;
+    height: 0;
+}
+
+.tree li::after{
+    border-left: 1px solid #000;
+    height: 100%;
+    width: 0px;
+    top: 2px;
+}
+
+.tree ul > li:last-child::after{
+    height: 8px;
+}
+
+.tree{
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 30px; 
+}
+
+.map{
+    padding-left: 200px;
+    padding-top: 150px;
+}
+
+.map h1{
+    margin: auto;
+    width: 600px;
+    height: auto;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 70px;
+    color: #fff;
+    border-style: double;
+    border-width: 20px;
+    border-color: #fff;
+    text-align: center
+      
+}
+
+
+
+
+
+
+
+/*---------------------------------------Contact Form --------*/
+/*the form was created by me and using the form samples on moodel for inspiratio-----*/
+
+
+u{ color: blue;}
+
+.leg{
+    padding-top: 100px;
+    padding-left: 425px;
+    padding-right: 425px;}
+
+legend {
+    font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 2.5em;
+	margin-bottom: 10px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-style: dashed;
+    border-width: 5px;
+    border-color: #FFABC5;
+    position: relative;
+}
+.form-style{
+    border-style: dashed;
+    border-width: 5px;
+    border-color: #FFABC5;
+max-width: 500px;
+	padding: 10px 20px;
+	background: #F6CEEC;
+	margin: 10px auto;
+	padding: 20px;
+	background: #F6CEEC;
+	border-radius: 8px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+   
+.form-style input[type="text"],
+.form-style input[type="email"],
+.form-style textarea,
+.form-style select {
+    
+    font-family: Georgia, "Times New Roman", Times, serif;
+	background: rgba(255,255,255,.1);
+	border: none;
+	border-radius: 4px;
+	font-size: 16px;
+	margin: 0;
+	outline: 0;
+	padding: 7px;
+	width: 100%;
+	box-sizing: border-box; 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	background-color: #F8E0F1;
+	color:#8a97a0;
+	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	margin-bottom: 30px;
+    
+    
+}
+
+.form-style input[type="radio"],
+.form-style input[type="checkbox"]{
+    
+    font-family: Georgia, "Times New Roman", Times, serif;
+	border: none; 
+    border: none;
+	border-radius: 7px;
+}
+
+.form-style input[type="button"]
+{position: relative;
+	display: block;
+	padding: 19px 39px 18px 39px;
+	color: #FFF;
+	margin: 0 auto;
+	background:#F781D8;
+	font-size: 18px;
+	text-align: center;
+	font-style: normal;
+	width: 100%;
+	border: 1px solid #F781D8;
+	border-width: 1px 1px 3px;
+	margin-bottom: 10px;
+}
+
+.form-style input[type="button"]:hover
+{
+	background:#F781D8;
+}
+  
+
+
+
+
+
+
+/*--------------------------------------------form img------*/
+
+
+.color{
+    background-color:#fcf0fa;
+}
+
+
+.row{
+    display: flex;
+}
+
+.column{
+    flex: 40%;
+    padding: 40px;
+    padding-top: 190px;
+    padding-bottom: 100px;
+}
+
+.formimage{
+     border-style: double;
+    border-width: 10px;
+    border-color: #ff99dd;
+    height:100%;
+    width: auto;
+}
+
+.contactimage{
+    border-style: double;
+    border-width: 10px;
+    border-color: #ff99dd;
+    height:100%;
+    width: auto;
+}
+
+
+
+
+
+/*---------------------------smtools--------------------------*/
+/*-----the grid lay out was inpired by and created after looking at the gridbyexample.com grid layouts-------*/
+/*the social media tools logo images has been taken from google images----*/
+
+.bgco{ 
+background-color: #d6fffc;
+}
+
+.box {
+border-style: double;
+border-width:10px;
+ border-color: #FFABC5;;
+ text-align: center;
+  background-color: #fff;
+  color: #000;
+  border-radius: 5px;
+  padding-bottom: 20px;
+  font-size: 180%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+    text-decoration: underline;
+}
+
+.box:nth-child(even) {
+  background-color:#d6fffc ;
+  color: #000;
+border-style: hidden;
+}
+
+.wrapper {
+ margin: auto;
+  padding-top: 0px;
+  width: 700px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(6, 175px);
+  grid-template-rows: 175px 175px 175px;
+  grid-auto-flow: column;
+}
+
+.smimages{
+    margin: auto;
+    text-align: center;
+    width: 100px;
+    height: auto;
+}
+
+.smtheader{
+    padding-top: 70px;
+    font-size: 60px;
+    font-weight: bold;
+  font-family: Georgia, "Times New Roman", Times, serif;
+    text-align: center;
+    margin: auto;
+    text-decoration: underline;
+    
+}
+
+
+/*---------------------------------------- sm-----------------*/
+
+.bkg{
+    background-color: #f7c8fa;
+}
+
+.row1{
+    display: flex;
+}
+
+.column1{
+    flex: 40%;
+    padding: 40px;
+}
+
+.pros{
+     border-style: double;
+    border-color: #483D8B;
+    border-width: 10px;
+    height:85%;
+    width: auto;
+}
+
+.cons{
+    border-style: double;
+    border-color: #483D8B;
+    border-width: 10px;
+    height:85%;
+    width: auto;
+}
+
+.pad
+{width: 75%;
+ padding-top: 100px;   
+margin: auto;}
+
+.definition{
+    float: right;
+    margin: 1em;
+    width: 45%;
+    height: auto;
+    
+}
+.media{
+    font-size: 23px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+    background-color:#fff;
+    padding: 20px;
+    margin: auto;
+    border-style: double;
+    border-color: #483D8B;
+    border-width: 15px;
+}
+
+#mediahead{
+     font-size: 23px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+    margin: auto;
+    text-align: center;
+    
+}
